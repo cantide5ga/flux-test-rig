@@ -15,10 +15,9 @@
     "prepack": "npm run build && cp -r src/typedef build/src && cp package.json build && cp typings.json build",
     "test": "rm -rf build && npm run build:tsc && istanbul cover jasmine",
     "posttest": "istanbul check-coverage --statements 80 --functions 80 --branches 80 --lines 80",
-    "prepublish": "npm run prepack",
-    "publish:major": "npm version major && npm publish build",
-    "publish:minor": "npm version minor && npm publish build",
-    "publish:patch": "npm version patch && npm publish build",
+    "publish:major": "npm version major && npm run prepack && npm publish build",
+    "publish:minor": "npm version minor && npm run prepack && npm publish build",
+    "publish:patch": "npm version patch && npm run prepack && npm publish build",
     "publish:current": "npm publish build"
   },
   "dependencies": {},
