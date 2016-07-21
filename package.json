@@ -3,6 +3,7 @@
   "name": "flux-test-rig",
   "description": "<description>",
   "version": "0.1.0",
+  "typings": "./src/typedef/flux-test-rig.d.ts",
   "scripts": {
     "clean": "rm -rf build && rm -rf dist",
     "install:latest": "npm install --save-dev typings@* typescript@* istanbul@* jasmine@*",
