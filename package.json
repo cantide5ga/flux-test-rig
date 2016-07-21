@@ -16,10 +16,10 @@
     "test": "rm -rf build && npm run build:tsc && istanbul cover jasmine",
     "posttest": "istanbul check-coverage --statements 80 --functions 80 --branches 80 --lines 80",
     "prepublish": "npm run prepack && cd build",
-    "publish:major": "npm run prepublish && npm version major && npm publish",
-    "publish:minor": "npm run prepublish && npm version minor && npm publish",
-    "publish:patch": "npm run prepublish && npm version patch && npm publish",
-    "publish:current": "npm run prepublish && npm publish"
+    "publish:major": "npm version major && npm publish",
+    "publish:minor": "npm version minor && npm publish",
+    "publish:patch": "npm version patch && npm publish",
+    "publish:current": "npm publish"
   },
   "dependencies": {},
   "devDependencies": {
