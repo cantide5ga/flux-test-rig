@@ -1,7 +1,7 @@
 {
   "author": "cantide5ga",
   "name": "flux-test-rig",
-  "description": "<description>",
+  "description": "Because testing Flux stores shouldn't be a pain in the ass.",
   "version": "0.1.0",
   "typings": "./src/typedef/flux-test-rig.d.ts",
   "scripts": {
@@ -11,9 +11,15 @@
     "compile": "tsc",
     "build:tsc": "npm run compile",
     "prebuild": "mkdir -p dist",
-    "build": "npm run prebuild && npm run build:tsc",
+    "build": "npm run build:tsc",
+    "prepack": "npm run build && cp -r src/typedef build/src && cp package.json build && cp typings.json build",
     "test": "rm -rf build && npm run build:tsc && istanbul cover jasmine",
-    "posttest": "istanbul check-coverage --statements 80 --functions 80 --branches 80 --lines 80"
+    "posttest": "istanbul check-coverage --statements 80 --functions 80 --branches 80 --lines 80",
+    "prepublish": "npm run prepack && cd build",
+    "publish:major": "npm run prepublish && npm version major && npm publish",
+    "publish:minor": "npm run prepublish && cd build && npm version minor && npm publish",
+    "publish:patch": "npm run prepublish && npm version patch && npm publish",
+    "publish:current": "npm run prepublish && npm publish"
   },
   "dependencies": {},
   "devDependencies": {
