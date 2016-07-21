@@ -1,7 +1,7 @@
 import { Rig, Intersect } from 'flux-test-rig';
 import rewire = require('rewire');
 
-function rerig<T> (storeFile: string, cbName: string): Rig<T> {
+function rig<T> (storeFile: string, cbName: string): Rig<T> {
     const rewired = rewire<Intersect<T>>(storeFile);
     const cb = rewired.__get__(cbName);
     return new Rigged<T>(rewired, cb);

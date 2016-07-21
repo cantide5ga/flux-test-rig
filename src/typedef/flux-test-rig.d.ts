@@ -9,7 +9,7 @@ declare namespace FluxTestRig {
         get(_var: string): any
     }
 
-    function rerig<T> (storeFile: string, cbName: string): Rig<T>;
+    function rig<T> (storeFile: string, cbName: string): Rig<T>;
 }
 
 export = FluxTestRig;
