@@ -3,7 +3,7 @@ import rewire = require('rewire');
 import { dirname } from 'path';
 
 export function rig<T> (storeFile: string, cbName: string): Rig<T> {
-    const callerDir = dirname(module.parent.filname);
+    const callerDir = dirname(module.parent.filename);
     const rewired = rewire<Intersect<T>>(`${callerDir}/${storeFile}`);
     const cb = rewired.__get__(cbName);
     return new Rigged<T>(rewired, cb);

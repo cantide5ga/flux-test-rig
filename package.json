@@ -11,7 +11,7 @@
     "build:tsc": "npm run compile",
     "prebuild": "mkdir -p dist",
     "build": "npm run clean && npm run build:tsc",
-    "prepack": "npm run build && cp -r src/typedef build/src/ && cp package.json build && cp typings.json build && cp README.md build",
+    "prepack": "npm run build && cp -r src/typedef build/src/ && cp package.json build && cp typings.json build && cp README.md build && cp .npmignore build",
     "test": "rm -rf build && npm run build:tsc && istanbul cover jasmine",
     "posttest": "istanbul check-coverage --statements 80 --functions 80 --branches 80 --lines 80",
     "publish:major": "npm version major && npm run prepack && npm publish build",

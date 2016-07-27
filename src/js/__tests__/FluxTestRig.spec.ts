@@ -5,7 +5,7 @@ import { Action, ActionTypes } from './Action';
 
 describe('FluxTestRig', () => {
     it('works', () => {
-        const rigged = rig<IStore>('./__tests__/Store.js', 'cb');
+        const rigged = rig<IStore>('Store.js', 'cb');
         
         const store = rigged.getStore('Store');
         const doAction = rigged.invokeAction;
