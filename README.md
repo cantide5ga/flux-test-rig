@@ -1,7 +1,7 @@
 #flux-test-rig
 [![npm](https://img.shields.io/npm/v/flux-test-rig.svg)](https://www.npmjs.com/package/flux-test-rig) [![Build Status](https://api.travis-ci.org/cantide5ga/flux-test-rig.svg?branch=master)](https://travis-ci.org/cantide5ga/flux-test-rig)
 
-**Because testing Flux stores shouldn't be a pain in the ass.**
+**IN PROGRESS**
 
 ###Introduction
 From Facebook's [documentation](https://facebook.github.io/react/blog/2014/09/24/testing-flux-applications.html):
@@ -14,9 +14,9 @@ This project is a thin wrapper around [Rewire](https://www.npmjs.com/package/rew
 
 ###Installation
 ```
-npm install flux-test-rig
+npm install flux-test-rig --save-dev
 ```
-Optionally Typescript type definitions via [Typings](https://www.npmjs.com/package/typings): `typings install`
+Optionally Typescript type definitions via [Typings](https://www.npmjs.com/package/typings): `typings install npm:flux-test-rig --save-dev`
 
 ###Example
 The flux-test-rig project tests are a great reference.
