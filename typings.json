@@ -1,7 +1,14 @@
 {
   "name": "flux-test-rig",
   "dependencies": {
-    "rewire": "registry:npm/rewire#2.5.1+20160601175240",
-    "flux-test-rig": "file:src/typedef/flux-test-rig.d.ts"
+    "flux-test-rig": "file:src/typedef/flux-test-rig.d.ts",
+    "rewire": "registry:npm/rewire#2.5.1+20160601175240"
+  },
+  "globalDependencies": {
+    "node": "registry:dt/node#6.0.0+20160720070758",
+    "jasmine": "registry:dt/jasmine#2.2.0+20160621224255"
+  },
+  "devDependencies": {
+    "flux": "registry:npm/flux#2.1.1+20160601175240"
   }
 }

@@ -1,8 +1,10 @@
 import { Rig, Intersect } from 'flux-test-rig';
 import rewire = require('rewire');
+import { dirname } from 'path';
 
 export function rig<T> (storeFile: string, cbName: string): Rig<T> {
-    const rewired = rewire<Intersect<T>>(`${storeFile}.js`);
+    const callerDir = dirname(module.parent.filname);
+    const rewired = rewire<Intersect<T>>(`${callerDir}/${storeFile}`);
     const cb = rewired.__get__(cbName);
     return new Rigged<T>(rewired, cb);
 }
@@ -26,6 +28,12 @@ class Rigged<T> implements Rig<T> {
 
     public get(_var: string): any {
         return this.rewired.__get__(_var);
+    }
+    
+    public getSpy(name: string): jasmine.Spy {
+        const spy = jasmine.createSpy(name, this.get(name));
+        this.rewired.__set__(name, spy);
+        return this.get(name);
     }
 }
 

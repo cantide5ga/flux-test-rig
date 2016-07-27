@@ -7,6 +7,7 @@ declare namespace FluxTestRig {
         getStore(storeName: string): T,
         invokeAction(action: any): void,
         get(_var: string): any
+        getSpy(name: string): jasmine.Spy;
     }
 
     function rig<T> (storeFile: string, cbName: string): Rig<T>;
