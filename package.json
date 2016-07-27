@@ -6,6 +6,7 @@
   "scripts": {
     "clean": "rm -rf build && rm -rf dist",
     "install:latest": "npm install --save-dev typings@* typescript@* istanbul@* jasmine@*",
+    "install:typings": "typings install",
     "init": "rm -rf .git && npm run install:latest && npm init && git init",
     "compile": "tsc",
     "build:tsc": "npm run compile",
