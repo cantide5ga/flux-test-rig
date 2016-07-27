@@ -1,7 +1,7 @@
 {
   "name": "flux-test-rig",
+  "main": "src/typedef/flux-test-rig.d.ts",
   "dependencies": {
-    "flux-test-rig": "file:src/typedef/flux-test-rig.d.ts",
     "rewire": "registry:npm/rewire#2.5.1+20160601175240"
   },
   "globalDependencies": {
