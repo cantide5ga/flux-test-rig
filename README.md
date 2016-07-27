@@ -11,8 +11,10 @@ flux-test-rig allows you to sanely test your Flux stores in isolation and sets u
 This project is a thin wrapper around [Rewire](https://www.npmjs.com/package/rewire), doing it's best to preserve type information when used with Typescript.
 
 ###Installation
-```npm install flux-test-rig```
-Optionally Typescript type definitions via [Typings](https://www.npmjs.com/package/typings): `typings install`
+```
+npm install flux-test-rig
+```
+Optional Typescript type definitions via [Typings](https://www.npmjs.com/package/typings): `typings install`
 
 ###Example
 The flux-test-rig project tests are a great reference.
