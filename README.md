@@ -14,7 +14,7 @@ This project is a thin wrapper around [Rewire](https://www.npmjs.com/package/rew
 ```
 npm install flux-test-rig
 ```
-Optional Typescript type definitions via [Typings](https://www.npmjs.com/package/typings): `typings install`
+Optionally Typescript type definitions via [Typings](https://www.npmjs.com/package/typings): `typings install`
 
 ###Example
 The flux-test-rig project tests are a great reference.

@@ -1,5 +1,7 @@
 language: node_js
 
+install: ./node_modules/.bin/typings install
+
 script:
     - npm test
 
