@@ -2,7 +2,7 @@
   "author": "cantide5ga",
   "name": "flux-test-rig",
   "description": "Because testing Flux stores shouldn't be a pain in the ass.",
-  "version": "0.17.0",
+  "version": "0.18.0",
   "scripts": {
     "clean": "rm -rf build && rm -rf dist",
     "install:latest": "npm install --save-dev typings@* typescript@* istanbul@* jasmine@*",
