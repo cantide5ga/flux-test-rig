@@ -2,7 +2,7 @@
 **Because testing Flux stores shouldn't be a pain in the ass.**
 
 ###Introduction
-From Facebook's [documentation](https://facebook.github.io/react/blog/2014/09/24/testing-flux-applications.html)
+From Facebook's [documentation](https://facebook.github.io/react/blog/2014/09/24/testing-flux-applications.html):
 
 >By design, stores can't be modified from the outside. They have no setters. The only way new data can enter a store is through the callback it registers with the dispatcher.
 
