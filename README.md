@@ -3,13 +3,15 @@
 
 ###Introduction
 From Facebook's [documentation](https://facebook.github.io/react/blog/2014/09/24/testing-flux-applications.html)
-*By design, stores can't be modified from the outside. They have no setters. The only way new data can enter a store is through the callback it registers with the dispatcher.*
+
+>By design, stores can't be modified from the outside. They have no setters. The only way new data can enter a store is through the callback it registers with the dispatcher.
+
 flux-test-rig allows you to sanely test your Flux stores in isolation and sets up stubs/trackers via Jasmine spies for you. 
 
-flux-test-rig is a thin wrapper around [Rewire](https://www.npmjs.com/package/rewire), doing it's best to preserve type information when used with Typescript.
+This project is a thin wrapper around [Rewire](https://www.npmjs.com/package/rewire), doing it's best to preserve type information when used with Typescript.
 
 ###Installation
-`npm install flux-test-rig`
+```npm install flux-test-rig```
 Optionally Typescript type definitions via [Typings](https://www.npmjs.com/package/typings): `typings install`
 
 ###Example
