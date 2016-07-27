@@ -1,4 +1,4 @@
-#flux-test-rig [![npm](https://img.shields.io/npm/v/flux-test-rig.svg)](https://www.npmjs.com/package/flux-test-rig)
+#flux-test-rig [![npm](https://img.shields.io/npm/v/flux-test-rig.svg)](https://www.npmjs.com/package/flux-test-rig) [![Build Status](https://api.travis-ci.org/cantide5ga/flux-test-rig.svg?branch=master)](https://travis-ci.org/cantide5ga/flux-test-rig)
 **Because testing Flux stores shouldn't be a pain in the ass.**
 
 ###Introduction
