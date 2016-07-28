@@ -17,7 +17,8 @@ npm install flux-test-rig --save-dev
 Optionally Typescript type definitions via [Typings](https://www.npmjs.com/package/typings): `typings install npm:flux-test-rig --save-dev`
 
 ###Example
-The flux-test-rig project tests are a great reference.
+The flux-test-rig project tests are a great reference!
+*not packaged; look for it on github*
 
 ###Usage
 setup:
@@ -52,7 +53,7 @@ expect(rigged.get('notes')).toEqual(['Do laundry']);
 expect(store.getNotes()).toEqual(['Do laundry']);
 ```
 
-alternatively, you can take advantage of Typescrip's static typing and code completion:
+alternatively, you can take advantage of Typescript's static typing and code completion:
 ```
 const rigged = rig<IStore>('./MyStoreFileName.js', 'nameOfCallback');
 ```
