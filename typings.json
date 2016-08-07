@@ -6,8 +6,9 @@
     "rewire": "registry:npm/rewire#2.5.1+20160601175240"
   },
   "globalDependencies": {
-    "node": "registry:dt/node#6.0.0+20160720070758",
-    "jasmine": "registry:dt/jasmine#2.2.0+20160621224255"
+    "callsite": "registry:dt/callsite#1.0.0+20160316171810",
+    "jasmine": "registry:dt/jasmine#2.2.0+20160621224255",
+    "node": "registry:dt/node#6.0.0+20160720070758"
   },
   "devDependencies": {
     "flux": "registry:npm/flux#2.1.1+20160601175240"
