@@ -1,11 +1,12 @@
 import { Rig, Intersect } from 'flux-test-rig';
-import rewire = require('rewire');
 import { dirname } from 'path';
+import stack = require('callsite');
+import rewire = require('rewire');
 
-export function rig<T> (storeFile: string, cbName: string): Rig<T> {
-    const callerDir = dirname(module.parent.filename);
+export function rig<T> (storeFile: string, cbName?: string): Rig<T> {
+    const callerDir = dirname(stack()[1].getFileName());
     const rewired = rewire<Intersect<T>>(`${callerDir}/${storeFile}`);
-    const cb = rewired.__get__(cbName);
+    const cb = cbName ? rewired.__get__(cbName): () => { };
     return new Rigged<T>(rewired, cb);
 }
 

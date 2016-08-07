@@ -20,6 +20,7 @@
     "publish:current": "npm publish build"
   },
   "dependencies": {
+    "callsite": "^1.0.0",
     "rewire": "^2.5.2"
   },
   "devDependencies": {
