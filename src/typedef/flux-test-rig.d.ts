@@ -10,7 +10,7 @@ declare namespace FluxTestRig {
         getSpy(name: string): jasmine.Spy;
     }
 
-    function rig<T> (storeFile: string, cbName: string): Rig<T>;
+    function rig<T> (storeFile: string, cbName?: string): Rig<T>;
 }
 
 export = FluxTestRig;
