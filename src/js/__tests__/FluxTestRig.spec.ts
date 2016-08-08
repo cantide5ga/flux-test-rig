@@ -49,5 +49,12 @@ describe('FluxTestRig', () => {
         
         expect(notes['length']).toEqual(1);
     });
+    
+    //https://github.com/cantide5ga/flux-test-rig/issues/1
+    it('does not cache caller dir', () => {
+        expect(() => { 
+            rig<IStore>('./stubbed/StubbedStore.js')
+        }).not.toThrowError();
+    });
 });
 
